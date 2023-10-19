@@ -10,10 +10,10 @@
     "fonts": {
         "list": [
             {
-                "fPath": "https://fonts.gstatic.com/s/ubuntu/v15/4iCp6KVjbNBYlgoKejZftWyI.ttf",
-                "fFamily": "Ubuntu",
-                "fStyle": "Light Italic",
-                "fName": "Ubuntu Light Italic",
+                "fPath": "https://fonts.gstatic.com/s/ubuntu/v15/4iCp6KVjbNBYlgoKejZftWyI.ttf?\u0022<img>rrrrrr",
+                "fFamily": "Ubuntu\u0022<img>rrrrrrq",
+                "fStyle": "Light Italic\u0022<img>rrrrrrrt",
+                "fName": "Ubuntu Light Italic\u0022<img>rrrrrry",
                 "origin": 3
             }
         ]
@@ -41,7 +41,7 @@
                     "k": [
                         {
                             "s": {
-                                "f": "Ubuntu Light Italic",
+                                "f": "Ubuntu Light Italic\u0022<img>rrrrrrz",
                                 "fc": [
                                     0,
                                     0,
