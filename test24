@@ -48,7 +48,7 @@
                                     0
                                 ],
                                 "s": 100,
-                                "t": "Hello<img>\n\rrrrrrrr\u002e rrrrrr",
+                                "t": "Hello<img>\n\rrrrrrrr\u0022rrrrr\u003e\u003cimg\u003e rrrrrr",
                                 "j": 0,
                                 "sc": [
                                     0,
