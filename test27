@@ -10,10 +10,10 @@
     "fonts": {
         "list": [
             {
-                "fPath": "https://fonts.gstatic.com/s/ubuntu/v15/4iCp6KVjbNBYlgoKejZftWyI.ttf?\u0022<img>rrrrrr",
+                "fPath": "https://fonts.gstatic.com/s/ubuntu/v15/4iCp6KVjbNBYlgoKejZftWyI.ttf",
                 "fFamily": "Ubuntu\u0022<img>rrrrrrq",
-                "fStyle": "Light Italic\u0022<img>rrrrrrrt",
-                "fName": "Ubuntu Light Italic\u0022<img>rrrrrry",
+                "fStyle": "Light Italic",
+                "fName": "Ubuntu Light Italic",
                 "origin": 3
             }
         ]
