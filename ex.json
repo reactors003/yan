@@ -1,6 +1,19 @@
- {
-                            "remote_label": "x",
-                            "remote_type": "x",
+{
+                    "lists": {
+                        "qwerty": "xxxxx"
+                    },
+                    "fields": [
+                        {
+                            "remote_label": "qwerty",
+                            "remote_type": "qwerty",
+                            "remote_id": "field[,0]",
+                            "remote_required": false
+                        },
+                        {
+                            "remote_label": "qwerty2",
+                            "remote_type": "qwerty3",
                             "remote_id": "field[,0]",
                             "remote_required": false
                         }
+                     }
+}
