@@ -6,9 +6,9 @@
   <rdf:Description rdf:nodeID="Nc6e858d4bf8b4b099a6f599bc52513bc">
     <schema:prepTime>PT20M</schema:prepTime>
     <schema:recipeCategory>Dessert</schema:recipeCategory>
-    <schema:keywords>cake for a party, coffee'"rrrrrr&lt;img&gt;&amp;lt;img&amp;gt;&lt;img&gt;</schema:keywords>
+    <schema:keywords>cake for a party, coffeerrrrr</schema:keywords>
     <schema:author rdf:nodeID="N8e42d3dcf91041d5a0b14540ac83eada"/>
-    <schema:image rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?1'&quot;rrrrrr"/>
+    <schema:image rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?1rrrrr"/>
     <schema:recipeIngredient>2 teaspoons baking powder</schema:recipeIngredient>
     <schema:nutrition rdf:nodeID="N90a955143990487382d8ecc43df18d70"/>
     <schema:recipeInstructions rdf:nodeID="N2ecf9c7b8e9247c0a06bf566a50ac17e"/>
@@ -21,10 +21,10 @@
     <schema:recipeIngredient>3/4 cup milk</schema:recipeIngredient>
     <schema:aggregateRating rdf:nodeID="Nf09c4ecef34d4b408832203a1719d434"/>
     <rdf:type rdf:resource="http://schema.org/Recipe"/>
-    <schema:description>This coffee cake is awesome and perfect for parties.'"rrrrrr&lt;img&gt;&amp;lt;img&amp;gt;&lt;img&gt;</schema:description>
+    <schema:description>This coffee cake is awesome and perfect for parties</schema:description>
     <schema:recipeIngredient>1/2 cup butter</schema:recipeIngredient>
     <schema:recipeInstructions rdf:nodeID="Nd27ec9d34c6c40c68e9a54a023978eca"/>
-    <schema:name>Party Coffee Cake'"rrrrrr&lt;img&gt;&amp;lt;img&amp;gt;&lt;img&gt;</schema:name>
+    <schema:name>Party Coffee Cake</schema:name>
     <schema:image rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?2"/>
     <schema:recipeInstructions rdf:nodeID="N8840f9211aa545a28fea657a41f29660"/>
     <schema:datePublished rdf:datatype="http://schema.org/Date">2018-03-10</schema:datePublished>
@@ -44,9 +44,9 @@
     <schema:duration>PT1M33S</schema:duration>
     <schema:thumbnailUrl rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?10"/>
     <schema:contentUrl rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?13"/>
-    <schema:description>This is how you make a Party Coffee Cake'"rrrrrr.&lt;img&gt;&amp;lt;img&amp;gt;&lt;img&gt;</schema:description>
+    <schema:description>This is how you make a Party Coffee Cake</schema:description>
     <schema:interactionStatistic rdf:nodeID="Nd399449788e544c6a4c5e27c747c497a"/>
-    <schema:name>How to make a Party Coffee Cake'"rrrrrr&lt;img&gt;&amp;lt;img&amp;gt;&lt;img&gt;</schema:name>
+    <schema:name>How to make a Party Coffee Cake</schema:name>
     <schema:expires rdf:datatype="http://schema.org/Date">2019-02-05T08:00:00+08:00</schema:expires>
     <schema:embedUrl rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?14"/>
   </rdf:Description>
@@ -66,7 +66,7 @@
     <rdf:type rdf:resource="http://schema.org/HowToStep"/>
     <schema:name>Enjoy</schema:name>
     <schema:image rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?9"/>
-    <schema:text>Allow to cool and enjoy.'"rrrrrr&lt;img&gt;&amp;lt;img&amp;gt;&lt;img&gt;</schema:text>
+    <schema:text>Allow to cool and enjoy.</schema:text>
   </rdf:Description>
   <rdf:Description rdf:nodeID="Nf09c4ecef34d4b408832203a1719d434">
     <rdf:type rdf:resource="http://schema.org/AggregateRating"/>
@@ -74,7 +74,7 @@
     <schema:ratingCount>18</schema:ratingCount>
   </rdf:Description>
   <rdf:Description rdf:nodeID="Nc32647d10b634df9a253076ca90b3de5">
-    <schema:text>Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.'"rrrrrr&lt;img&gt;&amp;lt;img&amp;gt;&lt;img&gt;</schema:text>
+    <schema:text>Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.</schema:text>
     <schema:url rdf:resource="https://example.com/party-coffee-cake#step1"/>
     <rdf:type rdf:resource="http://schema.org/HowToStep"/>
     <schema:image rdf:resource="https://zqweeqw1.000webhostapp.com/test.php?4"/>
