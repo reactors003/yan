@@ -1,0 +1,2556 @@
+{
+    "definition": {
+        "pages": [
+            {
+                "name": "loan-purpose",
+                "url": "/loan-purpose",
+                "sections": [
+                    {
+                        "fields": [
+                            {
+                                "name": "loanPurpose",
+                                "component": "RadioControl",
+                                "label": "What will you use this money for?",
+                                "labelShort": "Loan purpose",
+                                "helpText": "Some loans are designed for specific reasons.  We'll only show you results that are suitable for your loan needs.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "loanDetails.loanPurposeId"
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please enter the purpose of your loan",
+                                                "type": "Please enter the purpose of your loan"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": 8,
+                                                    "display": "Home improvement"
+                                                },
+                                                {
+                                                    "id": 9,
+                                                    "display": "Debts"
+                                                },
+                                                {
+                                                    "id": 5,
+                                                    "display": "Car"
+                                                },
+                                                {
+                                                    "id": 1,
+                                                    "display": "Wedding"
+                                                },
+                                                {
+                                                    "id": 2,
+                                                    "display": "Holiday"
+                                                },
+                                                {
+                                                    "id": 7,
+                                                    "display": "Something else"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "loanPurpose",
+                                                "questionLabel": "What will you use this money for?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "alwaysAsk": true
+                            },
+                            {
+                                "name": "loanAmount",
+                                "component": "LoanAmountControl",
+                                "label": "How much would you like to borrow?",
+                                "labelShort": "Loan amount",
+                                "helpText": "Lending rates depend on how much you'd like to borrow. Each loan has a minimum and maximum amount that you can get.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "loanDetails.loanAmount"
+                                        },
+                                        "schema": {
+                                            "maximum": 100000,
+                                            "minimum": 500,
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "maximum": "Please enter an amount between £500 and £100,000",
+                                                "minimum": "Please enter an amount between £500 and £100,000",
+                                                "required": "Please select or enter your loan amount",
+                                                "type": "Please select or enter your loan amount"
+                                            }
+                                        }
+                                    },
+                                    "loanPurposeId": {
+                                        "data": {
+                                            "questionSet": "loanDetails.loanPurposeId"
+                                        }
+                                    },
+                                    "prefix": {
+                                        "data": {
+                                            "value": "£"
+                                        }
+                                    },
+                                    "formatter": {
+                                        "data": {
+                                            "value": {
+                                                "function": "number"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "loanAmount",
+                                                "questionLabel": "How much would you like to borrow?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "alwaysAsk": true
+                            },
+                            {
+                                "name": "loanTermMonths",
+                                "component": "SelectControl",
+                                "label": "How many years do you want to borrow it for?",
+                                "labelShort": "Loan term (years)",
+                                "helpText": "Each loan has a minimum and maximum term over which you can pay back your loan. The longer the term, the more interest you'll pay. ",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "loanDetails.loanTermMonths"
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please select a loan duration",
+                                                "type": "Please select a loan duration"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": 12,
+                                                    "display": 1
+                                                },
+                                                {
+                                                    "id": 24,
+                                                    "display": 2
+                                                },
+                                                {
+                                                    "id": 36,
+                                                    "display": 3
+                                                },
+                                                {
+                                                    "id": 48,
+                                                    "display": 4
+                                                },
+                                                {
+                                                    "id": 60,
+                                                    "display": 5
+                                                },
+                                                {
+                                                    "id": 72,
+                                                    "display": 6
+                                                },
+                                                {
+                                                    "id": 84,
+                                                    "display": 7
+                                                },
+                                                {
+                                                    "id": 96,
+                                                    "display": 8
+                                                },
+                                                {
+                                                    "id": 108,
+                                                    "display": 9
+                                                },
+                                                {
+                                                    "id": 120,
+                                                    "display": 10
+                                                },
+                                                {
+                                                    "id": 132,
+                                                    "display": 11
+                                                },
+                                                {
+                                                    "id": 144,
+                                                    "display": 12
+                                                },
+                                                {
+                                                    "id": 156,
+                                                    "display": 13
+                                                },
+                                                {
+                                                    "id": 168,
+                                                    "display": 14
+                                                },
+                                                {
+                                                    "id": 180,
+                                                    "display": 15
+                                                },
+                                                {
+                                                    "id": 192,
+                                                    "display": 16
+                                                },
+                                                {
+                                                    "id": 204,
+                                                    "display": 17
+                                                },
+                                                {
+                                                    "id": 216,
+                                                    "display": 18
+                                                },
+                                                {
+                                                    "id": 228,
+                                                    "display": 19
+                                                },
+                                                {
+                                                    "id": 240,
+                                                    "display": 20
+                                                },
+                                                {
+                                                    "id": 252,
+                                                    "display": 21
+                                                },
+                                                {
+                                                    "id": 264,
+                                                    "display": 22
+                                                },
+                                                {
+                                                    "id": 276,
+                                                    "display": 23
+                                                },
+                                                {
+                                                    "id": 288,
+                                                    "display": 24
+                                                },
+                                                {
+                                                    "id": 300,
+                                                    "display": 25
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "loanTermMonths",
+                                                "questionLabel": "How many years do you want to borrow it for?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "alwaysAsk": true
+                            }
+                        ]
+                    }
+                ],
+                "nextPage": "about-you",
+                "title": "Let's find the right loan for you",
+                "subtitle": "Your details will be used for a 'soft credit search', which you can see but lenders can't. Your chance of approval will be based on this check, and <strong>it won't affect your credit score.</strong>"
+            },
+            {
+                "name": "about-you",
+                "url": "/about-you",
+                "sections": [
+                    {
+                        "fields": [
+                            {
+                                "name": "authorisation",
+                                "component": {
+                                    "slot": "Authorisation"
+                                },
+                                "slotProps": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].email"
+                                        },
+                                        "schema": {
+                                            "type": "string",
+                                            "format": "email",
+                                            "errorMessage": {
+                                                "format": "Please enter your email address",
+                                                "required": "Please enter your email address",
+                                                "type": "Please enter your email address"
+                                            },
+                                            "transform": [
+                                                "trim"
+                                            ]
+                                        }
+                                    },
+                                    "fieldType": {
+                                        "data": {
+                                            "value": "email"
+                                        }
+                                    },
+                                    "placeholder": {
+                                        "data": {
+                                            "value": "Please enter your email address"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "email",
+                                                "questionLabel": "What is your email address?",
+                                                "valueMask": "UNDEFINED"
+                                            }
+                                        }
+                                    },
+                                    "configuration": [
+                                        "ENABLE_SIGN_UP"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "title",
+                                "component": "RadioControl",
+                                "label": "What's your title?",
+                                "labelShort": "Title",
+                                "helpText": "We appreciate that some people may not identify with a binary gender and would prefer to select the title Mx. In this case, please refer to your sex/gender as outlined on your birth certificate or gender recognition certificate. We are working hard to review this requirement, and thank you for your understanding.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].titleId"
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "maximum": 4,
+                                            "minimum": 1,
+                                            "errorMessage": {
+                                                "required": "Please select your title",
+                                                "type": "Please select your title",
+                                                "maximum": "Please select your title",
+                                                "minimum": "Please select your title"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "reference": "titles"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "title",
+                                                "questionLabel": "What's your title?"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "name": "firstName",
+                                "component": "TextControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].firstName"
+                                        },
+                                        "schema": {
+                                            "minLength": 2,
+                                            "maxLength": 50,
+                                            "pattern": "^(?:(?![×Þß÷þø])[-'a-zÀ-ÿA-Z ])+$",
+                                            "type": "string",
+                                            "errorMessage": {
+                                                "minLength": "Please enter your first name",
+                                                "maxLength": "Please enter a maximum of 50 alphabetic characters",
+                                                "pattern": "Please enter a maximum of 50 alphabetic characters",
+                                                "required": "Please enter your first name",
+                                                "type": "Please enter your first name"
+                                            },
+                                            "transform": [
+                                                "trim"
+                                            ]
+                                        }
+                                    },
+                                    "placeholder": {
+                                        "data": {
+                                            "value": "First name"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "firstName",
+                                                "questionLabel": "What is your first name?",
+                                                "valueMask": "UNDEFINED"
+                                            }
+                                        }
+                                    }
+                                },
+                                "label": "What is your first name?",
+                                "labelShort": "First name",
+                                "subText": "Make sure to use your full name and not a nickname"
+                            },
+                            {
+                                "name": "lastName",
+                                "component": "TextControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].lastName"
+                                        },
+                                        "schema": {
+                                            "minLength": 2,
+                                            "maxLength": 50,
+                                            "pattern": "^(?:(?![×Þß÷þø])[-'a-zÀ-ÿA-Z ])+$",
+                                            "type": "string",
+                                            "errorMessage": {
+                                                "minLength": "Please enter your last name",
+                                                "maxLength": "Please enter a maximum of 50 alphabetic characters",
+                                                "pattern": "Please enter a maximum of 50 alphabetic characters",
+                                                "required": "Please enter your last name",
+                                                "type": "Please enter your last name"
+                                            },
+                                            "transform": [
+                                                "trim"
+                                            ]
+                                        }
+                                    },
+                                    "placeholder": {
+                                        "data": {
+                                            "value": "Last name"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "lastName",
+                                                "questionLabel": "What is your last name?",
+                                                "valueMask": "UNDEFINED"
+                                            }
+                                        }
+                                    }
+                                },
+                                "label": "What is your last name?",
+                                "labelShort": "Last name"
+                            },
+                            {
+                                "name": "dateOfBirth",
+                                "component": "DateControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].dateOfBirth"
+                                        },
+                                        "schema": {
+                                            "format": "date",
+                                            "type": "string",
+                                            "errorMessage": {
+                                                "format": "Please let us know when you were born",
+                                                "required": "Please enter your date of birth",
+                                                "type": "Please enter your date of birth",
+                                                "minAge": "Unfortunately we can only provide product information to users aged between 18 and 99 years of age",
+                                                "maxAge": "Unfortunately we can only provide product information to users aged between 18 and 99 years of age"
+                                            },
+                                            "minAge": {
+                                                "years": 18
+                                            },
+                                            "maxAge": {
+                                                "years": 99
+                                            },
+                                            "transform": [
+                                                "trim"
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "dateOfBirth",
+                                                "questionLabel": "When were you born?",
+                                                "valueMask": "DATE_TO_YEARS"
+                                            }
+                                        }
+                                    }
+                                },
+                                "label": "When were you born?",
+                                "labelShort": "Date of birth"
+                            },
+                            {
+                                "name": "maritalStatus",
+                                "component": "RadioControl",
+                                "label": "What's your marital status?",
+                                "labelShort": "Marital status",
+                                "helpText": "Some companies use your marital status to help them decide whether to accept you as a customer.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].maritalStatusId"
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please select your marital status",
+                                                "type": "Please select your marital status"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "reference": "marital-statuses"
+                                        }
+                                    },
+                                    "optionsOrder": {
+                                        "data": {
+                                            "value": [
+                                                2,
+                                                5,
+                                                7,
+                                                4,
+                                                1,
+                                                8,
+                                                3,
+                                                6
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "maritalStatus",
+                                                "questionLabel": "What's your marital status?"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "previousPage": "loan-purpose",
+                "nextPage": "your-home",
+                "title": "About you"
+            },
+            {
+                "name": "your-home",
+                "url": "/your-home",
+                "sections": [
+                    {
+                        "fields": [
+                            {
+                                "name": "isHomeOwner",
+                                "component": "RadioControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].isHomeOwner"
+                                        },
+                                        "schema": {
+                                            "type": "boolean",
+                                            "errorMessage": {
+                                                "type": "Please select your homeowner status",
+                                                "required": "Please select your homeowner status"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "isHomeOwner",
+                                                "questionLabel": "Are you a homeowner?"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": true,
+                                                    "display": "Yes"
+                                                },
+                                                {
+                                                    "id": false,
+                                                    "display": "No"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "layout": {
+                                        "data": {
+                                            "value": "dual"
+                                        }
+                                    }
+                                },
+                                "label": "Are you a homeowner?",
+                                "labelShort": "Homeowner",
+                                "helpText": "Some loans are only available to homeowners. We’ll only show you loans you’re eligible to apply for."
+                            },
+                            {
+                                "name": "hasMortgage",
+                                "component": "RadioControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].hasMortgage"
+                                        },
+                                        "schema": {
+                                            "type": "boolean",
+                                            "errorMessage": {
+                                                "type": "Please tell us if you have a mortgage",
+                                                "required": "Please tell us if you have a mortgage"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "hasMortgage",
+                                                "questionLabel": "Do you have a mortgage?"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": true,
+                                                    "display": "Yes"
+                                                },
+                                                {
+                                                    "id": false,
+                                                    "display": "No"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "layout": {
+                                        "data": {
+                                            "value": "dual"
+                                        }
+                                    }
+                                },
+                                "label": "Do you have a mortgage?",
+                                "labelShort": "Has a mortgage",
+                                "helpText": "Insurers need to know if you own your home outright or if you have a mortgage, because if anything happened to affect the home's value, the mortgage company would need to be involved.",
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "persons.[*].isHomeOwner",
+                                            "schemaOperator": "const",
+                                            "value": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "address",
+                                "component": "AddressControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "address",
+                                            "alias": {
+                                                "path": "households.[*]",
+                                                "property": "address"
+                                            },
+                                            "relationshipFlags": {
+                                                "isPreviousAddress": false
+                                            }
+                                        },
+                                        "schema": {
+                                            "type": "object",
+                                            "objectContains": {
+                                                "fields": [
+                                                    "postcode"
+                                                ]
+                                            },
+                                            "errorMessage": {
+                                                "required": "Please enter your current address",
+                                                "type": "Please enter your current address",
+                                                "objectContains": "Please enter an address with a postcode"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "address",
+                                                "questionLabel": "What's your address?",
+                                                "valueMask": "SINGLE_ADDRESS"
+                                            }
+                                        }
+                                    },
+                                    "url": {
+                                        "data": {
+                                            "value": "/services/addresslookup/v1"
+                                        }
+                                    },
+                                    "additionalApiRequest": {
+                                        "data": {
+                                            "value": null
+                                        }
+                                    }
+                                },
+                                "label": "What's your address?",
+                                "labelShort": "Address",
+                                "helpText": "We use your address to help find your credit file. Please enter your address as it appears on official paperwork like utility bills or bank statements."
+                            },
+                            {
+                                "name": "yearsAtAddress",
+                                "component": "SelectControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "yearsAtAddress",
+                                            "alias": {
+                                                "isMeta": true,
+                                                "path": "households.[*]",
+                                                "property": "yearsAtAddress"
+                                            },
+                                            "relationshipFlags": {
+                                                "isPreviousAddress": false
+                                            }
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please select the number of years you have been at this address",
+                                                "type": "Please select the number of years you have been at this address"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": 0,
+                                                    "display": 0
+                                                },
+                                                {
+                                                    "id": 1,
+                                                    "display": 1
+                                                },
+                                                {
+                                                    "id": 2,
+                                                    "display": 2
+                                                },
+                                                {
+                                                    "id": 3,
+                                                    "display": 3
+                                                },
+                                                {
+                                                    "id": 4,
+                                                    "display": 4
+                                                },
+                                                {
+                                                    "id": 5,
+                                                    "display": 5
+                                                },
+                                                {
+                                                    "id": 6,
+                                                    "display": 6
+                                                },
+                                                {
+                                                    "id": 7,
+                                                    "display": 7
+                                                },
+                                                {
+                                                    "id": 8,
+                                                    "display": 8
+                                                },
+                                                {
+                                                    "id": 9,
+                                                    "display": 9
+                                                },
+                                                {
+                                                    "id": 10,
+                                                    "display": 10
+                                                },
+                                                {
+                                                    "id": 11,
+                                                    "display": 11
+                                                },
+                                                {
+                                                    "id": 12,
+                                                    "display": 12
+                                                },
+                                                {
+                                                    "id": 13,
+                                                    "display": 13
+                                                },
+                                                {
+                                                    "id": 14,
+                                                    "display": 14
+                                                },
+                                                {
+                                                    "id": 15,
+                                                    "display": 15
+                                                },
+                                                {
+                                                    "id": 16,
+                                                    "display": "16 or more"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "yearsAtAddress",
+                                                "questionLabel": "How many years have you lived at this address?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "label": "How many years have you lived at this address?",
+                                "labelShort": "Years at address",
+                                "subText": "If you've moved home in the last two years, we may also need your previous address to help find your credit file."
+                            },
+                            {
+                                "name": "previousAddress",
+                                "component": "AddressControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "previousAddress",
+                                            "alias": {
+                                                "path": "households.[*]",
+                                                "property": "address"
+                                            },
+                                            "relationshipFlags": {
+                                                "isPreviousAddress": true
+                                            }
+                                        },
+                                        "schema": {
+                                            "type": "object",
+                                            "objectContains": {
+                                                "fields": [
+                                                    "postcode"
+                                                ]
+                                            },
+                                            "errorMessage": {
+                                                "required": "Please enter your previous address",
+                                                "type": "Please enter your previous address",
+                                                "objectContains": "Please enter an address with a postcode"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "previousAddress",
+                                                "questionLabel": "What's your previous address?",
+                                                "valueMask": "SINGLE_ADDRESS"
+                                            }
+                                        }
+                                    },
+                                    "url": {
+                                        "data": {
+                                            "value": "/services/addresslookup/v1"
+                                        }
+                                    }
+                                },
+                                "label": "What's your previous address?",
+                                "labelShort": "Previous address",
+                                "helpText": "As you've moved in the last 2 years, providing your previous address will help find your credit file.",
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "yearsAtAddress",
+                                            "collection": {
+                                                "path": "households.[*]",
+                                                "flags": {
+                                                    "isPreviousAddress": false
+                                                },
+                                                "isMeta": true
+                                            },
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                0,
+                                                1,
+                                                2
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "previousPage": "about-you",
+                "nextPage": "your-finances",
+                "title": "Your home"
+            },
+            {
+                "name": "your-finances",
+                "url": "/your-finances",
+                "sections": [
+                    {
+                        "fields": [
+                            {
+                                "name": "employmentStatus",
+                                "component": "RadioSelectControl",
+                                "label": "What's your employment status?",
+                                "labelShort": "Employment status",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].employment.[].employmentStatusId",
+                                            "relationshipFlags": {
+                                                "mainEmployment": true
+                                            }
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please select your employment status",
+                                                "type": "Please select your employment status"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "reference": "employment-statuses-v2"
+                                        }
+                                    },
+                                    "optionsOrder": {
+                                        "data": {
+                                            "value": [
+                                                1,
+                                                10,
+                                                9,
+                                                6,
+                                                2,
+                                                5,
+                                                11
+                                            ]
+                                        }
+                                    },
+                                    "primaryItemCount": {
+                                        "data": {
+                                            "value": 4
+                                        }
+                                    },
+                                    "ariaLabel": {
+                                        "data": {
+                                            "value": "you have selected other employment status, what is the other employment status"
+                                        }
+                                    },
+                                    "selectHeader": {
+                                        "data": {
+                                            "value": "Select from more options"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "employmentStatus",
+                                                "questionLabel": "What's your employment status?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "options": {
+                                    "deleteDependenciesOnChange": true
+                                },
+                                "helpText": "Telling us about your employment status helps us to show how likely you are to be approved for each loan."
+                            },
+                            {
+                                "name": "occupation",
+                                "component": "AutocompleteControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].employment.[].occupationId",
+                                            "relationshipFlags": {
+                                                "mainEmployment": true
+                                            }
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "type": "Please select the job that fits you best",
+                                                "required": "Please select the job that fits you best"
+                                            }
+                                        }
+                                    },
+                                    "placeholder": {
+                                        "data": {
+                                            "value": "e.g. teacher"
+                                        }
+                                    },
+                                    "url": {
+                                        "data": {
+                                            "value": "/dialogue/api/reference-data/v2/list/occupations"
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "reference": "occupations",
+                                            "onDemand": true
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "profession lookup",
+                                                "questionLabel": "What job do you do?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "label": "What job do you do?",
+                                "labelShort": "Job title",
+                                "helpText": "Providers want to know what job you do, to help them work out the best rate.",
+                                "subText": "Don’t worry if you can’t find your exact job. Providers use a standard list, but it doesn’t include every single job. Try describing your job differently, or pick the closest match.",
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                1,
+                                                2,
+                                                10
+                                            ],
+                                            "collection": {
+                                                "flags": {
+                                                    "mainEmployment": true
+                                                }
+                                            },
+                                            "statePath": "persons.[*].employment.[].employmentStatusId"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "businessSector",
+                                "component": "AutocompleteControl",
+                                "label": "Which industry do you work in?",
+                                "labelShort": "Industry",
+                                "subText": "This is the type of business you’re employed in, such as Education, Marketing or Construction. Try to find the closest match you can.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].employment.[].businessSectorId",
+                                            "relationshipFlags": {
+                                                "mainEmployment": true
+                                            }
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please select the industry you work in",
+                                                "type": "Please select the industry you work in"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "reference": "business-sectors",
+                                            "onDemand": true
+                                        }
+                                    },
+                                    "url": {
+                                        "data": {
+                                            "value": "/dialogue/api/reference-data/v2/list/business-sectors"
+                                        }
+                                    },
+                                    "placeholder": {
+                                        "data": {
+                                            "value": "e.g. education"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "industry lookup",
+                                                "questionLabel": "Which industry do you work in?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "helpText": "Providers use the industry you work in to help them work out the price of your loan rate. For example, a teacher is in education, an engineer might be in construction, and a call centre manager might be in banking.",
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "persons.[*].employment.[].employmentStatusId",
+                                            "collection": {
+                                                "flags": {
+                                                    "mainEmployment": true
+                                                }
+                                            },
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                1,
+                                                2,
+                                                10
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "employerName",
+                                "component": "TextControl",
+                                "label": "What is the name of your employer?",
+                                "labelShort": "Employer",
+                                "helpText": "Providers want to know the name of your employer, to help them work out the best rate.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].employment.[].employerName",
+                                            "relationshipFlags": {
+                                                "mainEmployment": true
+                                            }
+                                        },
+                                        "schema": {
+                                            "minLength": 1,
+                                            "maxLength": 150,
+                                            "type": "string",
+                                            "pattern": "^(?:(?![×Þß÷þø])[-'a-zÀ-ÿA-Z0-9 ])+$",
+                                            "errorMessage": {
+                                                "pattern": "Please enter your employer's name",
+                                                "minLength": "Please enter your employer's name",
+                                                "maxLength": "Please enter a maximum of 150 characters",
+                                                "required": "Please enter your employer's name",
+                                                "type": "Please enter your employer's name"
+                                            },
+                                            "transform": [
+                                                "trim"
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "employerName",
+                                                "questionLabel": "What is the name of your employer?",
+                                                "valueMask": "UNDEFINED"
+                                            }
+                                        }
+                                    }
+                                },
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "persons.[*].employment.[].employmentStatusId",
+                                            "collection": {
+                                                "flags": {
+                                                    "mainEmployment": true
+                                                }
+                                            },
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                1,
+                                                2,
+                                                10
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "annualIncome",
+                                "component": "NumberControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].employment.[].annualIncome",
+                                            "relationshipFlags": {
+                                                "mainEmployment": true
+                                            }
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please enter your annual income",
+                                                "type": "Please enter your annual income",
+                                                "maximum": "Please enter a maximum of 9 digits",
+                                                "minimum": "Please enter a minimum of £1,000"
+                                            },
+                                            "maximum": 999999999,
+                                            "minimum": 1000
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "annualIncome",
+                                                "questionLabel": "What's your annual income before tax?"
+                                            }
+                                        }
+                                    },
+                                    "formatter": {
+                                        "data": {
+                                            "value": {
+                                                "function": "number"
+                                            }
+                                        }
+                                    },
+                                    "prefix": {
+                                        "data": {
+                                            "value": "£"
+                                        }
+                                    }
+                                },
+                                "label": "What's your annual income before tax?",
+                                "labelShort": "Annual income",
+                                "helpText": "Telling us your wage before tax helps us to work out how likely you are to be approved for each loan.",
+                                "subText": "If the wage for your main job is going to change in the next 12 months, please give us the lowest amount."
+                            },
+                            {
+                                "name": "houseValue",
+                                "component": "NumberControl",
+                                "label": "What's the value of your house?",
+                                "labelShort": "House value",
+                                "helpText": "Providing the value of your property will ensure we can show your chance of being approved for each loan, based on your personal circumstances.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "houseValue",
+                                            "alias": {
+                                                "path": "households.[*]",
+                                                "property": "houseValue"
+                                            },
+                                            "relationshipFlags": {
+                                                "isPreviousAddress": false
+                                            }
+                                        },
+                                        "schema": {
+                                            "maximum": 99999999,
+                                            "minimum": 0,
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "maximum": "Please enter a max of 8 digits",
+                                                "minimum": "Please enter your house value",
+                                                "required": "Please enter your house value",
+                                                "type": "Please enter your house value"
+                                            }
+                                        }
+                                    },
+                                    "prefix": {
+                                        "data": {
+                                            "value": "£"
+                                        }
+                                    },
+                                    "formatter": {
+                                        "data": {
+                                            "value": {
+                                                "function": "number"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "houseValue",
+                                                "questionLabel": "What's the value of your house?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "loanDetails.loanAmount",
+                                            "schemaOperator": "minimum",
+                                            "value": 10000,
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "loanDetails.loanPurposeId",
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                9,
+                                                8,
+                                                1,
+                                                7
+                                            ]
+                                        },
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "persons.[*].hasMortgage",
+                                            "schemaOperator": "const",
+                                            "value": true
+                                        },
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "persons.[*].isHomeOwner",
+                                            "schemaOperator": "const",
+                                            "value": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "otherHouseIncomeCheck",
+                                "component": "RadioControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].hasOtherHouseIncome"
+                                        },
+                                        "schema": {
+                                            "type": "boolean",
+                                            "errorMessage": {
+                                                "type": "Please enter other annual household income",
+                                                "required": "Please enter other annual household income"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "otherHouseIncomeCheck",
+                                                "questionLabel": "Do you have any other household income?"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": true,
+                                                    "display": "Yes"
+                                                },
+                                                {
+                                                    "id": false,
+                                                    "display": "No"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "layout": {
+                                        "data": {
+                                            "value": "dual"
+                                        }
+                                    }
+                                },
+                                "label": "Do you have any other household income?",
+                                "labelShort": "Other annual household income",
+                                "subText": "Include things like your partner's annual income, or income you may receive from savings and investments or rental property."
+                            },
+                            {
+                                "name": "otherHouseIncome",
+                                "component": "NumberControl",
+                                "label": "How much other annual household income do you have?",
+                                "labelShort": "Other annual household total income",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].otherHouseIncome"
+                                        },
+                                        "schema": {
+                                            "minimum": 0,
+                                            "maximum": 999999999,
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "minimum": "Please enter your other annual household income",
+                                                "maximum": "Please enter a maximum of 9 digits",
+                                                "required": "Please enter your other annual household income",
+                                                "type": "Please enter your other annual household income"
+                                            }
+                                        }
+                                    },
+                                    "prefix": {
+                                        "data": {
+                                            "value": "£"
+                                        }
+                                    },
+                                    "formatter": {
+                                        "data": {
+                                            "value": {
+                                                "function": "number"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "otherHouseIncome",
+                                                "questionLabel": "How much other annual household income do you have?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "persons.[*].hasOtherHouseIncome",
+                                            "schemaOperator": "const",
+                                            "value": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "monthlyAccommodationCosts",
+                                "component": "NumberControl",
+                                "label": "How much do you pay towards your rent or mortgage each month?",
+                                "labelShort": "Monthly mortgage or rent payment",
+                                "subText": "We only need to know about how much you spend personally.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].monthlyAccommodationCosts"
+                                        },
+                                        "schema": {
+                                            "maximum": 999999999,
+                                            "minimum": 0,
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "maximum": "Please enter a maximum of 9 digits",
+                                                "minimum": "Please enter your monthly accommodation costs",
+                                                "required": "Please enter your monthly accommodation costs",
+                                                "type": "Please enter your monthly accommodation costs"
+                                            }
+                                        }
+                                    },
+                                    "prefix": {
+                                        "data": {
+                                            "value": "£"
+                                        }
+                                    },
+                                    "formatter": {
+                                        "data": {
+                                            "value": {
+                                                "function": "number"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "monthlyAccommodationCosts",
+                                                "questionLabel": "How much do you pay towards your rent or mortgage each month?"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "name": "numberOfDependants",
+                                "component": "RadioControl",
+                                "label": "How many people depend on you financially?",
+                                "labelShort": "Number of people who financially depend on you",
+                                "helpText": "Dependants are people who rely on you financially, such as children or other family members.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].numberOfDependants"
+                                        },
+                                        "schema": {
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "required": "Please enter your number of dependants",
+                                                "type": "Please enter your number of dependants"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": 0,
+                                                    "display": "None"
+                                                },
+                                                {
+                                                    "id": 1,
+                                                    "display": 1
+                                                },
+                                                {
+                                                    "id": 2,
+                                                    "display": 2
+                                                },
+                                                {
+                                                    "id": 3,
+                                                    "display": "3 or more"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "numberOfDependants",
+                                                "questionLabel": "How many people depend on you financially?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "subText": "Dependants are people who rely on you for financial support, such as children or other family members."
+                            },
+                            {
+                                "name": "dependantExpenditure",
+                                "component": "NumberControl",
+                                "label": "What's your monthly share of childcare costs, spousal and child maintenance and school fees and other care?",
+                                "labelShort": "Monthly dependant payments",
+                                "helpText": "Some loans companies use details on what you pay each month towards childcare, child maintenance or school fees to help them decide whether to accept you as a customer.",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].dependantExpenditure"
+                                        },
+                                        "schema": {
+                                            "maximum": 999999999,
+                                            "minimum": 0,
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "maximum": "Please enter a maximum of 9 digits",
+                                                "minimum": "Please tell us about any payments you make in a month towards childcare, child maintenance or school fees",
+                                                "required": "Please tell us about any payments you make in a month towards childcare, child maintenance or school fees",
+                                                "type": "Please tell us about any payments you make in a month towards childcare, child maintenance or school fees"
+                                            }
+                                        }
+                                    },
+                                    "prefix": {
+                                        "data": {
+                                            "value": "£"
+                                        }
+                                    },
+                                    "formatter": {
+                                        "data": {
+                                            "value": {
+                                                "function": "number"
+                                            }
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "dependantExpenditure",
+                                                "questionLabel": "What's your monthly share of childcare costs, spousal and child maintenance and school fees and other care?"
+                                            }
+                                        }
+                                    }
+                                },
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "statePath": "persons.[*].numberOfDependants",
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                1,
+                                                2,
+                                                3
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "previousPage": "your-home",
+                "nextPage": "contact-info",
+                "title": "Your finances"
+            },
+            {
+                "name": "contact-info",
+                "url": "/contact-info",
+                "sections": [
+                    {
+                        "fields": [
+                            {
+                                "name": "phoneNumber",
+                                "component": "TextControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "persons.[*].phoneNumber"
+                                        },
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "^((((\\+44)? ?(\\(0\\))? ?)|(0))( ?[0-9]{3,4}){3})$",
+                                            "errorMessage": {
+                                                "pattern": "Please enter a valid telephone number including area code",
+                                                "required": "Please enter a valid telephone number including area code",
+                                                "type": "Please enter a valid telephone number including area code"
+                                            },
+                                            "transform": [
+                                                "trim"
+                                            ]
+                                        }
+                                    },
+                                    "fieldType": {
+                                        "data": {
+                                            "value": "tel"
+                                        }
+                                    },
+                                    "placeholder": {
+                                        "data": {
+                                            "value": "Mobile or landline"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "phoneNumber",
+                                                "questionLabel": "What's your contact number?",
+                                                "valueMask": "UNDEFINED"
+                                            }
+                                        }
+                                    }
+                                },
+                                "label": "What's your contact number?",
+                                "labelShort": "Contact number",
+                                "helpText": "Please enter a valid mobile or landline number. We can arrange for an experienced loan advisor to contact you and discuss the options available.",
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "schemaOperator": "minimum",
+                                            "value": 10000,
+                                            "statePath": "loanDetails.loanAmount",
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "function": "showIfTrue",
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                9,
+                                                8,
+                                                1,
+                                                7
+                                            ],
+                                            "statePath": "loanDetails.loanPurposeId"
+                                        },
+                                        {
+                                            "function": "showIfTrue",
+                                            "schemaOperator": "const",
+                                            "value": true,
+                                            "statePath": "persons.[*].hasMortgage"
+                                        },
+                                        {
+                                            "function": "showIfTrue",
+                                            "schemaOperator": "const",
+                                            "value": true,
+                                            "statePath": "persons.[*].isHomeOwner"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "creditMonitorSignup",
+                                "component": "CheckboxControl",
+                                "label": "Would you like to sign up to MoneySuperMarket's Credit Monitor service, which offers free credit score updates, hints and tips?",
+                                "labelShort": "Credit Monitor signup",
+                                "subText": "If yes, we will send you an email with details about the service with a sign up link.",
+                                "alwaysAsk": true,
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "marketingPreferences"
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": "creditMonitorEmail",
+                                                    "display": "Count me in"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "creditMonitorSignup",
+                                                "questionLabel": "Would you like to sign up to MoneySuperMarket's Credit Monitor service, which offers free credit score updates, hints and tips?"
+                                            }
+                                        }
+                                    },
+                                    "disableValidityIndicator": {
+                                        "data": {
+                                            "value": true
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "name": "marketingPreferences",
+                                "component": "CheckboxControl",
+                                "props": {
+                                    "field": {
+                                        "data": {
+                                            "questionSet": "marketingPreferences"
+                                        }
+                                    },
+                                    "analyticsSettings": {
+                                        "data": {
+                                            "value": {
+                                                "fieldName": "marketingPreferences",
+                                                "questionLabel": "Receive saving tips and offers"
+                                            }
+                                        }
+                                    },
+                                    "options": {
+                                        "data": {
+                                            "value": [
+                                                {
+                                                    "id": "email",
+                                                    "display": "Email"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "disableValidityIndicator": {
+                                        "data": {
+                                            "value": true
+                                        }
+                                    }
+                                },
+                                "label": "Receive saving tips and offers",
+                                "labelShort": "Marketing preferences",
+                                "subText": "We'd love to keep you informed with personalised news, offers, products and promotions. Please untick the box if you would prefer to not receive these updates.",
+                                "alwaysAsk": true,
+                                "state": {
+                                    "visible": [
+                                        {
+                                            "function": "showIfTrue",
+                                            "schemaOperator": "enum",
+                                            "value": [
+                                                false,
+                                                null
+                                            ],
+                                            "profilePath": "marketingPreferences.email"
+                                        }
+                                    ]
+                                },
+                                "computedValue": {
+                                    "default": {
+                                        "email": true
+                                    },
+                                    "historicDefault": {
+                                        "email": true
+                                    }
+                                }
+                            },
+                            {
+                                "name": "termsAndConditions",
+                                "component": {
+                                    "slot": "StaticHtml"
+                                },
+                                "slotProps": {
+                                    "staticUrl": "/dialogue/question-bank/static/base/termsandconditions/index.html"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "previousPage": "your-finances",
+                "title": "Contact info"
+            }
+        ]
+    },
+    "data": {
+        "reference": {
+            "titles": [
+                {
+                    "id": 1,
+                    "display": "Mr",
+                    "classifiers": [
+                        "loans",
+                        "credit-cards"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "display": "Mrs",
+                    "classifiers": [
+                        "loans",
+                        "credit-cards"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "display": "Miss",
+                    "classifiers": [
+                        "loans",
+                        "credit-cards"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "display": "Ms",
+                    "classifiers": [
+                        "loans",
+                        "credit-cards"
+                    ]
+                }
+            ],
+            "marital-statuses": [
+                {
+                    "id": 7,
+                    "display": "Single",
+                    "classifiers": []
+                },
+                {
+                    "id": 2,
+                    "display": "Married / Civil partnership",
+                    "classifiers": []
+                },
+                {
+                    "id": 4,
+                    "display": "Living with partner",
+                    "classifiers": []
+                },
+                {
+                    "id": 1,
+                    "display": "Divorced",
+                    "classifiers": []
+                },
+                {
+                    "id": 8,
+                    "display": "Widowed",
+                    "classifiers": []
+                }
+            ],
+            "employment-statuses-v2": [
+                {
+                    "id": 1,
+                    "display": "Full time",
+                    "classifiers": []
+                },
+                {
+                    "id": 2,
+                    "display": "Part time",
+                    "classifiers": []
+                },
+                {
+                    "id": 10,
+                    "display": "Self employed",
+                    "classifiers": []
+                },
+                {
+                    "id": 9,
+                    "display": "Retired",
+                    "classifiers": []
+                },
+                {
+                    "id": 5,
+                    "display": "Homemaker",
+                    "classifiers": []
+                },
+                {
+                    "id": 6,
+                    "display": "Student",
+                    "classifiers": []
+                },
+                {
+                    "id": 11,
+                    "display": "Unemployed",
+                    "classifiers": []
+                }
+            ]
+        }
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "loanDetails": {
+                "type": "object",
+                "properties": {
+                    "loanPurposeId": {
+                        "type": "integer",
+                        "errorMessage": {
+                            "required": "Please enter the purpose of your loan",
+                            "type": "Please enter the purpose of your loan"
+                        }
+                    },
+                    "loanAmount": {
+                        "maximum": 100000,
+                        "minimum": 500,
+                        "type": "integer",
+                        "errorMessage": {
+                            "maximum": "Please enter an amount between £500 and £100,000",
+                            "minimum": "Please enter an amount between £500 and £100,000",
+                            "required": "Please select or enter your loan amount",
+                            "type": "Please select or enter your loan amount"
+                        }
+                    },
+                    "loanTermMonths": {
+                        "type": "integer",
+                        "errorMessage": {
+                            "required": "Please select a loan duration",
+                            "type": "Please select a loan duration"
+                        }
+                    }
+                },
+                "errorMessage": {
+                    "required": {
+                        "loanPurposeId": "Please enter the purpose of your loan",
+                        "loanAmount": "Please select or enter your loan amount",
+                        "loanTermMonths": "Please select a loan duration"
+                    }
+                },
+                "required": [
+                    "loanPurposeId",
+                    "loanAmount",
+                    "loanTermMonths"
+                ]
+            },
+            "persons": {
+                "type": "object",
+                "patternProperties": {
+                    ".*": {
+                        "type": "object",
+                        "properties": {
+                            "email": {
+                                "type": "string",
+                                "format": "email",
+                                "errorMessage": {
+                                    "format": "Please enter your email address",
+                                    "required": "Please enter your email address",
+                                    "type": "Please enter your email address"
+                                },
+                                "transform": [
+                                    "trim"
+                                ]
+                            },
+                            "titleId": {
+                                "type": "integer",
+                                "maximum": 4,
+                                "minimum": 1,
+                                "errorMessage": {
+                                    "required": "Please select your title",
+                                    "type": "Please select your title",
+                                    "maximum": "Please select your title",
+                                    "minimum": "Please select your title"
+                                }
+                            },
+                            "firstName": {
+                                "minLength": 2,
+                                "maxLength": 50,
+                                "pattern": "^(?:(?![×Þß÷þø])[-'a-zÀ-ÿA-Z ])+$",
+                                "type": "string",
+                                "errorMessage": {
+                                    "minLength": "Please enter your first name",
+                                    "maxLength": "Please enter a maximum of 50 alphabetic characters",
+                                    "pattern": "Please enter a maximum of 50 alphabetic characters",
+                                    "required": "Please enter your first name",
+                                    "type": "Please enter your first name"
+                                },
+                                "transform": [
+                                    "trim"
+                                ]
+                            },
+                            "lastName": {
+                                "minLength": 2,
+                                "maxLength": 50,
+                                "pattern": "^(?:(?![×Þß÷þø])[-'a-zÀ-ÿA-Z ])+$",
+                                "type": "string",
+                                "errorMessage": {
+                                    "minLength": "Please enter your last name",
+                                    "maxLength": "Please enter a maximum of 50 alphabetic characters",
+                                    "pattern": "Please enter a maximum of 50 alphabetic characters",
+                                    "required": "Please enter your last name",
+                                    "type": "Please enter your last name"
+                                },
+                                "transform": [
+                                    "trim"
+                                ]
+                            },
+                            "dateOfBirth": {
+                                "format": "date",
+                                "type": "string",
+                                "errorMessage": {
+                                    "format": "Please let us know when you were born",
+                                    "required": "Please enter your date of birth",
+                                    "type": "Please enter your date of birth",
+                                    "minAge": "Unfortunately we can only provide product information to users aged between 18 and 99 years of age",
+                                    "maxAge": "Unfortunately we can only provide product information to users aged between 18 and 99 years of age"
+                                },
+                                "minAge": {
+                                    "years": 18
+                                },
+                                "maxAge": {
+                                    "years": 99
+                                },
+                                "transform": [
+                                    "trim"
+                                ]
+                            },
+                            "maritalStatusId": {
+                                "type": "integer",
+                                "errorMessage": {
+                                    "required": "Please select your marital status",
+                                    "type": "Please select your marital status"
+                                }
+                            },
+                            "isHomeOwner": {
+                                "type": "boolean",
+                                "errorMessage": {
+                                    "type": "Please select your homeowner status",
+                                    "required": "Please select your homeowner status"
+                                }
+                            },
+                            "employment": {
+                                "type": "array",
+                                "items": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "employmentStatusId": {
+                                                "type": "integer",
+                                                "errorMessage": {
+                                                    "required": "Please select your employment status",
+                                                    "type": "Please select your employment status"
+                                                }
+                                            },
+                                            "annualIncome": {
+                                                "type": "integer",
+                                                "errorMessage": {
+                                                    "required": "Please enter your annual income",
+                                                    "type": "Please enter your annual income",
+                                                    "maximum": "Please enter a maximum of 9 digits",
+                                                    "minimum": "Please enter a minimum of £1,000"
+                                                },
+                                                "maximum": 999999999,
+                                                "minimum": 1000
+                                            }
+                                        },
+                                        "errorMessage": {
+                                            "required": {
+                                                "employmentStatusId": "Please select your employment status",
+                                                "annualIncome": "Please enter your annual income"
+                                            }
+                                        },
+                                        "required": [
+                                            "employmentStatusId",
+                                            "annualIncome"
+                                        ],
+                                        "allOf": [
+                                            {
+                                                "if": {
+                                                    "properties": {
+                                                        "employmentStatusId": {
+                                                            "enum": [
+                                                                1,
+                                                                2,
+                                                                10
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "employmentStatusId"
+                                                    ]
+                                                },
+                                                "then": {
+                                                    "properties": {
+                                                        "occupationId": {
+                                                            "type": "integer",
+                                                            "errorMessage": {
+                                                                "type": "Please select the job that fits you best",
+                                                                "required": "Please select the job that fits you best"
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "occupationId"
+                                                    ],
+                                                    "errorMessage": {
+                                                        "required": {
+                                                            "occupationId": "Please select the job that fits you best"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "if": {
+                                                    "properties": {
+                                                        "employmentStatusId": {
+                                                            "enum": [
+                                                                1,
+                                                                2,
+                                                                10
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "employmentStatusId"
+                                                    ]
+                                                },
+                                                "then": {
+                                                    "properties": {
+                                                        "businessSectorId": {
+                                                            "type": "integer",
+                                                            "errorMessage": {
+                                                                "required": "Please select the industry you work in",
+                                                                "type": "Please select the industry you work in"
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "businessSectorId"
+                                                    ],
+                                                    "errorMessage": {
+                                                        "required": {
+                                                            "businessSectorId": "Please select the industry you work in"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "if": {
+                                                    "properties": {
+                                                        "employmentStatusId": {
+                                                            "enum": [
+                                                                1,
+                                                                2,
+                                                                10
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "employmentStatusId"
+                                                    ]
+                                                },
+                                                "then": {
+                                                    "properties": {
+                                                        "employerName": {
+                                                            "minLength": 1,
+                                                            "maxLength": 150,
+                                                            "type": "string",
+                                                            "pattern": "^(?:(?![×Þß÷þø])[-'a-zÀ-ÿA-Z0-9 ])+$",
+                                                            "errorMessage": {
+                                                                "pattern": "Please enter your employer's name",
+                                                                "minLength": "Please enter your employer's name",
+                                                                "maxLength": "Please enter a maximum of 150 characters",
+                                                                "required": "Please enter your employer's name",
+                                                                "type": "Please enter your employer's name"
+                                                            },
+                                                            "transform": [
+                                                                "trim"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "employerName"
+                                                    ],
+                                                    "errorMessage": {
+                                                        "required": {
+                                                            "employerName": "Please enter your employer's name"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "hasOtherHouseIncome": {
+                                "type": "boolean",
+                                "errorMessage": {
+                                    "type": "Please enter other annual household income",
+                                    "required": "Please enter other annual household income"
+                                }
+                            },
+                            "monthlyAccommodationCosts": {
+                                "maximum": 999999999,
+                                "minimum": 0,
+                                "type": "integer",
+                                "errorMessage": {
+                                    "maximum": "Please enter a maximum of 9 digits",
+                                    "minimum": "Please enter your monthly accommodation costs",
+                                    "required": "Please enter your monthly accommodation costs",
+                                    "type": "Please enter your monthly accommodation costs"
+                                }
+                            },
+                            "numberOfDependants": {
+                                "type": "integer",
+                                "errorMessage": {
+                                    "required": "Please enter your number of dependants",
+                                    "type": "Please enter your number of dependants"
+                                }
+                            }
+                        },
+                        "errorMessage": {
+                            "required": {
+                                "email": "Please enter your email address",
+                                "titleId": "Please select your title",
+                                "firstName": "Please enter your first name",
+                                "lastName": "Please enter your last name",
+                                "dateOfBirth": "Please enter your date of birth",
+                                "maritalStatusId": "Please select your marital status",
+                                "isHomeOwner": "Please select your homeowner status",
+                                "hasOtherHouseIncome": "Please enter other annual household income",
+                                "monthlyAccommodationCosts": "Please enter your monthly accommodation costs",
+                                "numberOfDependants": "Please enter your number of dependants"
+                            }
+                        },
+                        "required": [
+                            "email",
+                            "titleId",
+                            "firstName",
+                            "lastName",
+                            "dateOfBirth",
+                            "maritalStatusId",
+                            "isHomeOwner",
+                            "hasOtherHouseIncome",
+                            "monthlyAccommodationCosts",
+                            "numberOfDependants"
+                        ],
+                        "allOf": [
+                            {
+                                "if": {
+                                    "properties": {
+                                        "isHomeOwner": {
+                                            "const": true
+                                        }
+                                    },
+                                    "required": [
+                                        "isHomeOwner"
+                                    ]
+                                },
+                                "then": {
+                                    "properties": {
+                                        "hasMortgage": {
+                                            "type": "boolean",
+                                            "errorMessage": {
+                                                "type": "Please tell us if you have a mortgage",
+                                                "required": "Please tell us if you have a mortgage"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "hasMortgage"
+                                    ],
+                                    "errorMessage": {
+                                        "required": {
+                                            "hasMortgage": "Please tell us if you have a mortgage"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "if": {
+                                    "properties": {
+                                        "hasOtherHouseIncome": {
+                                            "const": true
+                                        }
+                                    },
+                                    "required": [
+                                        "hasOtherHouseIncome"
+                                    ]
+                                },
+                                "then": {
+                                    "properties": {
+                                        "otherHouseIncome": {
+                                            "minimum": 0,
+                                            "maximum": 999999999,
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "minimum": "Please enter your other annual household income",
+                                                "maximum": "Please enter a maximum of 9 digits",
+                                                "required": "Please enter your other annual household income",
+                                                "type": "Please enter your other annual household income"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "otherHouseIncome"
+                                    ],
+                                    "errorMessage": {
+                                        "required": {
+                                            "otherHouseIncome": "Please enter your other annual household income"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "if": {
+                                    "properties": {
+                                        "numberOfDependants": {
+                                            "enum": [
+                                                1,
+                                                2,
+                                                3
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "numberOfDependants"
+                                    ]
+                                },
+                                "then": {
+                                    "properties": {
+                                        "dependantExpenditure": {
+                                            "maximum": 999999999,
+                                            "minimum": 0,
+                                            "type": "integer",
+                                            "errorMessage": {
+                                                "maximum": "Please enter a maximum of 9 digits",
+                                                "minimum": "Please tell us about any payments you make in a month towards childcare, child maintenance or school fees",
+                                                "required": "Please tell us about any payments you make in a month towards childcare, child maintenance or school fees",
+                                                "type": "Please tell us about any payments you make in a month towards childcare, child maintenance or school fees"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "dependantExpenditure"
+                                    ],
+                                    "errorMessage": {
+                                        "required": {
+                                            "dependantExpenditure": "Please tell us about any payments you make in a month towards childcare, child maintenance or school fees"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "address": {
+                "type": "object",
+                "objectContains": {
+                    "fields": [
+                        "postcode"
+                    ]
+                },
+                "errorMessage": {
+                    "required": "Please enter your current address",
+                    "type": "Please enter your current address",
+                    "objectContains": "Please enter an address with a postcode"
+                }
+            },
+            "yearsAtAddress": {
+                "type": "integer",
+                "errorMessage": {
+                    "required": "Please select the number of years you have been at this address",
+                    "type": "Please select the number of years you have been at this address"
+                }
+            }
+        },
+        "errorMessage": {
+            "required": {
+                "address": "Please enter your current address",
+                "yearsAtAddress": "Please select the number of years you have been at this address"
+            }
+        },
+        "required": [
+            "address",
+            "yearsAtAddress"
+        ],
+        "allOf": [
+            {
+                "if": {
+                    "properties": {
+                        "yearsAtAddress": {
+                            "enum": [
+                                0,
+                                1,
+                                2
+                            ]
+                        }
+                    },
+                    "required": [
+                        "yearsAtAddress"
+                    ]
+                },
+                "then": {
+                    "properties": {
+                        "previousAddress": {
+                            "type": "object",
+                            "objectContains": {
+                                "fields": [
+                                    "postcode"
+                                ]
+                            },
+                            "errorMessage": {
+                                "required": "Please enter your previous address",
+                                "type": "Please enter your previous address",
+                                "objectContains": "Please enter an address with a postcode"
+                            }
+                        }
+                    },
+                    "required": [
+                        "previousAddress"
+                    ],
+                    "errorMessage": {
+                        "required": {
+                            "previousAddress": "Please enter your previous address"
+                        }
+                    }
+                }
+            },
+            {
+                "if": {
+                    "required": [
+                        "loanDetails",
+                        "persons"
+                    ],
+                    "properties": {
+                        "loanDetails": {
+                            "type": "object",
+                            "properties": {
+                                "loanAmount": {
+                                    "type": "integer",
+                                    "minimum": 10000
+                                },
+                                "loanPurposeId": {
+                                    "enum": [
+                                        9,
+                                        8,
+                                        1,
+                                        7
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "loanAmount",
+                                "loanPurposeId"
+                            ]
+                        },
+                        "persons": {
+                            "type": "object",
+                            "patternProperties": {
+                                ".*": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hasMortgage": {
+                                            "const": true
+                                        },
+                                        "isHomeOwner": {
+                                            "const": true
+                                        }
+                                    },
+                                    "required": [
+                                        "hasMortgage",
+                                        "isHomeOwner"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "houseValue": {
+                            "maximum": 99999999,
+                            "minimum": 0,
+                            "type": "integer",
+                            "errorMessage": {
+                                "maximum": "Please enter a max of 8 digits",
+                                "minimum": "Please enter your house value",
+                                "required": "Please enter your house value",
+                                "type": "Please enter your house value"
+                            }
+                        }
+                    },
+                    "required": [
+                        "houseValue"
+                    ],
+                    "errorMessage": {
+                        "required": {
+                            "houseValue": "Please enter your house value"
+                        }
+                    }
+                }
+            },
+            {
+                "if": {
+                    "required": [
+                        "loanDetails",
+                        "persons"
+                    ],
+                    "properties": {
+                        "loanDetails": {
+                            "type": "object",
+                            "properties": {
+                                "loanAmount": {
+                                    "type": "integer",
+                                    "minimum": 10000
+                                },
+                                "loanPurposeId": {
+                                    "enum": [
+                                        9,
+                                        8,
+                                        1,
+                                        7
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "loanAmount",
+                                "loanPurposeId"
+                            ]
+                        },
+                        "persons": {
+                            "type": "object",
+                            "patternProperties": {
+                                ".*": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hasMortgage": {
+                                            "const": true
+                                        },
+                                        "isHomeOwner": {
+                                            "const": true
+                                        }
+                                    },
+                                    "required": [
+                                        "hasMortgage",
+                                        "isHomeOwner"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "persons": {
+                            "type": "object",
+                            "patternProperties": {
+                                ".*": {
+                                    "type": "object",
+                                    "properties": {
+                                        "phoneNumber": {
+                                            "type": "string",
+                                            "pattern": "^((((\\+44)? ?(\\(0\\))? ?)|(0))( ?[0-9]{3,4}){3})$",
+                                            "errorMessage": {
+                                                "pattern": "Please enter a valid telephone number including area code",
+                                                "required": "Please enter a valid telephone number including area code",
+                                                "type": "Please enter a valid telephone number including area code"
+                                            },
+                                            "transform": [
+                                                "trim"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "phoneNumber"
+                                    ],
+                                    "errorMessage": {
+                                        "required": {
+                                            "phoneNumber": "Please enter a valid telephone number including area code"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "persons"
+                    ]
+                }
+            }
+        ]
+    }
+}
