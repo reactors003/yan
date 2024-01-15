@@ -4,7 +4,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:asgard="http://asgard.jrc.it" xmlns:gdacs="http://www.gdacs.org" xmlns:glide="http://glidenumber.net" xmlns:georss="http://www.georss.org/georss" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GDACS RSS information&xxe;</title>
-    <link>javascript://www.gdacs.org/</link>
+    <link>https://www.gdacs.org/?&quot;&apos;</link>
     <description>Near real-time alerts about natural disaster with a potential &xxe;humanitarian impact</description>
     <managingEditor>stefano.paris@ext.ec.europa.eu</managingEditor>
     <!--Records number 15-->
@@ -18,7 +18,7 @@
       <description>On 1/24/2021 12:14:45 PM, an earthquake occurred &xxe;in Antarctica potentially affecting No people within 100km. The earthquake had Magnitude 5.5M, Depth:10km.</description>
       <enclosure type="image/png" length="1" url="https://www.gdacs.org/saved/gdacs/eq/eq1354611_1.png" />
       <gdacs:temporary>false</gdacs:temporary>
-      <link>http://www.gdacs.org/report.aspx?eventtype=EQ&amp;eventid=1252927&quot;&apos;rrrrr</link>
+      <link>jttp://www.gdacs.org/report.aspx?eventtype=EQ&amp;eventid=1252927&quot;&apos;rrrrr</link>
       <pubDate>Sun, 24 Jan 2021 12:14:45 GMT</pubDate>
       <gdacs:iscurrent>true</gdacs:iscurrent>
       <gdacs:fromdate>Sun, 24 Jan 2021 12:14:45 GMT</gdacs:fromdate>
