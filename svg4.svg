@@ -1,3 +1,3 @@
-<svg onload="alert()">
+<svg>
 </svg>
 <img src=x onerror=alert(document.domain)>
