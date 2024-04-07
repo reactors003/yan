@@ -1,8 +1,0 @@
-<svg>
-
-</svg>
-<x:script xmlns:x="http://www.w3.org/1999/xhtml">alert(document.domain)</x:script>
-<object data=x></object>
-  <iframe></iframe>
-  <frameset><frame></frameset></frameset>
-  <a></a>
