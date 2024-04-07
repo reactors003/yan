@@ -1,5 +1,0 @@
-<svg>
-  <a xlink:href="java script:xxx"><text x="20" y="20">XSS</text></a>
-  <math>
-    <input>
-  <form action='java script:alert()'>xxx</form>
