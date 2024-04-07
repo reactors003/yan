@@ -1,7 +1,7 @@
 <svg>
-  <foreignObject></foreignObject>
+ <![CDATA[some stuff]]><![CDATA[
 </svg>
-  <audio x=zz>xxxx\u0022<video x=zz>
+  <audio xx=zz>xxxx\u0022<video xx=zz>
 <object>
   <embed>
     <input on=x>
