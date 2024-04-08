@@ -6,3 +6,10 @@
   <embed>
     <input on=x>
 <textarea><img alt="</textarea><img src--> onerror=alert(1)>"></textarea>
+<svg><style>
+    <script>alert(1)</script>
+</style></svg>
+
+<math><style>
+    <img src onerror=alert(2)>
+</style></math>
