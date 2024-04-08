@@ -1,7 +1,7 @@
 <svg>
 <img/<![CDATA[some stuff]]><![CDATA[ on=x 
 </svg>
-  <audio xx=zz>xxxx\u0022<video xx=zz>
+  <audio xx&quot;=zz>xxxx\u0022<video xx=zz>
 <object>
   <embed>
     <input on=x>
