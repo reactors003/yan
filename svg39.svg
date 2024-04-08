@@ -10,6 +10,6 @@
     <script>alert(1)</script>
 </style></svg>
 
-<math><style>
+<math><x href="z:alert">blah<style>
     <img src onerror=alert(2)>
 </style></math>
