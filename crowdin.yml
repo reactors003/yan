@@ -1,0 +1,5 @@
+files:
+  - source: /test8.xml
+    translation: main/%original_file_name%
+    translatable_elements:
+      - main/
