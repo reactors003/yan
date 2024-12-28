@@ -1,5 +1,6 @@
 files:
   - source: /test8.xml
     translation: main/%original_file_name%
+    content_segmentation: 0
     translatable_elements:
       - main/
