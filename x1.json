@@ -1,7 +1,7 @@
 {
   "identifier": "wix-proxy-translator",
-  "name": "Wix",
-  "logo": "/assets/logo/wix.png",
+  "name": "Wix\"'rrrrr<img>rrrr",
+  "logo": "/assets/logo/wix.png?\"'rrrrr<img>rrrr",
   "baseUrl": "https://proxy-translator.app.crowdin.net",
   "authentication": {
     "type": "crowdin_app",
@@ -27,8 +27,8 @@
     "context-menu": [
       {
         "key": "wix-proxy-translator-context-menu",
-        "name": "Wix",
-        "description": "Content translation with proxy translation technology",
+        "name": "Wix\"'rrrrr<img>rrrr",
+        "description": "Content translation w\"'rrrrr<img>rrrrith proxy translation technology",
         "options": {
           "location": "source_file",
           "type": "new_tab",
