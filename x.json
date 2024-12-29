@@ -1,0 +1,51 @@
+{
+  "identifier": "wix-proxy-translator",
+  "name": "Wix",
+  "logo": "/assets/logo/wix.png",
+  "baseUrl": "https://proxy-translator.app.crowdin.net",
+  "authentication": {
+    "type": "crowdin_app",
+    "clientId": "sHhkJlhOAIboL18I0kFC"
+  },
+  "events": {
+    "installed": "/api/hook/install",
+    "uninstall": "/api/hook/uninstall"
+  },
+  "scopes": [
+    "project"
+  ],
+  "modules": {
+    "project-integrations": [
+      {
+        "key": "wix-proxy-translator-project-integration",
+        "name": "Wix",
+        "description": "Content translation with proxy translation technology",
+        "logo": "/assets/logo/wix.png",
+        "url": "/integration/"
+      }
+    ],
+    "context-menu": [
+      {
+        "key": "wix-proxy-translator-context-menu",
+        "name": "Wix",
+        "description": "Content translation with proxy translation technology",
+        "options": {
+          "location": "source_file",
+          "type": "new_tab",
+          "url": "/api/from-context-menu"
+        }
+      }
+    ],
+    "custom-file-format": [
+      {
+        "key": "wix-proxy-translator-custom-file-format",
+        "url": "/api/process",
+        "type": "proxy-json",
+        "stringsExport": true,
+        "extensions": [
+          ".json"
+        ]
+      }
+    ]
+  }
+}
