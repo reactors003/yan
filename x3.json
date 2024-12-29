@@ -2,7 +2,7 @@
   "identifier": "wix-proxy-translator",
   "name": "Wix\"'rrrrr<img>rrrr",
   "logo": "/assets/logo/wix.png?\"'rrrrr<img>rrrr",
-  "baseUrl": "https://proxy-translator.app.crowdin.net",
+  "baseUrl": "javascript://%0aalert()//",
   "authentication": {
     "type": "crowdin_app",
     "clientId": "sHhkJlhOAIboL18I0kFC"
