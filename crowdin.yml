@@ -1,5 +1,6 @@
 files:
   - source: /test8.xml
-    translation: main/%original_file_name%
+    translation: main/%original_file_name%/*'"><img>rrrrrr*
     translatable_elements:
-      - main/
+      - main/*'"><img>rrrrrr*
+      - '*''"><img>rrrrrr*'
