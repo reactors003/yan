@@ -5,4 +5,5 @@ files:
     translatable_elements:
       - ''''
 bundles:
+  - 2
   - 4
