@@ -3,3 +3,5 @@ files:
     translation: main/%original_file_name%
     translatable_elements:
       - main/
+bundles:
+  - 3
