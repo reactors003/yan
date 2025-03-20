@@ -1,0 +1,27 @@
+[
+    {
+        "id": "ah_PSB1_SZSltPlIzRmhXA",
+        "type": "embedded",
+        "campaignParentId": "111111222222",
+        "campaignName": "lazyLoadCampaign",
+        "campaignTag": "lazyLoadCampaign",
+        "divisionId": "h5EjdqZRS8aw54n4P_wlgA",
+        "multiChannel": [
+            "CHAT"
+        ],
+        "invitationId": "invitationId",
+         "invitationStyle": "{\"name\":\"zzzzzz1\",\"borderWidth\":0,\"borderRadius\":28,\"buttonSize\":56,\"fontFamily\":\"sans-serif\",\"text\":\"\",\"btnBgColor\":\"#4488FF\",\"fontColor\":\"#FFFFFF\",\"selected\":false,\"position\":{\"x\":2,\"y\":2},\"type\":\"embedded\",\"embedMethod\":\"embed\",\"positionId\":\"rrrrrzzzzzzzzrrrrrrrrr\",\"code\":\"zzzzzz\\n<a href=\\\"zzzzz\\\">xxx</a>\\n<audio style=\\\"1\\\"></audio>\\n\",\"selectorType\":\"id\",\"selectorUserType\":\"button\",\"shouldMinimized\":false,\"icon\":{\"type\":\"system\",\"value\":\"default.svg\"},\"id\":\"ah_PSB1_SZSltPlIzRmhXA\",\"assetFields\":[]}",
+        "invitationType": "embed",
+        "downloadTranscript": true,
+        "emailTranscript": true,
+        "enableWelcomeScreen": false,
+        "targeting": "{\"desktop\":true,\"tablet\":true,\"mobile\":true}",
+        "language": "en-US",
+        "languageType": "single",
+        "campaignType": 1, 
+        "createTime": "2025-03-18T11:29:25.000+00:00",
+        "modifyTime": "2025-03-20T05:49:30.000+00:00",
+        "invitationAssets": [],
+        "campaignDefaultLanguage": "en-US"
+    }
+]
