@@ -1,27 +1,91 @@
-[
-    {
-        "id": "ah_PSB1_SZSltPlIzRmhXA",
-        "type": "embedded",
-        "campaignParentId": "111111222222",
-        "campaignName": "lazyLoadCampaign",
-        "campaignTag": "lazyLoadCampaign",
-        "divisionId": "h5EjdqZRS8aw54n4P_wlgA",
-        "multiChannel": [
-            "CHAT"
-        ],
-        "invitationId": "invitationId",
-         "invitationStyle": "{\"name\":\"zzzzzz1\",\"borderWidth\":0,\"borderRadius\":28,\"buttonSize\":56,\"fontFamily\":\"sans-serif\",\"text\":\"\",\"btnBgColor\":\"#4488FF\",\"fontColor\":\"#FFFFFF\",\"selected\":false,\"position\":{\"x\":2,\"y\":2},\"type\":\"embedded\",\"embedMethod\":\"embed\",\"positionId\":\"rrrrrzzzzzzzzrrrrrrrrr\",\"code\":\"zzzzzz\\n<a href=\\\"zzzzz\\\">xxx</a>\\n<audio style=\\\"1\\\"></audio>\\n\",\"selectorType\":\"id\",\"selectorUserType\":\"button\",\"shouldMinimized\":false,\"icon\":{\"type\":\"system\",\"value\":\"default.svg\"},\"id\":\"ah_PSB1_SZSltPlIzRmhXA\",\"assetFields\":[]}",
-        "invitationType": "embed",
-        "downloadTranscript": true,
-        "emailTranscript": true,
-        "enableWelcomeScreen": false,
-        "targeting": "{\"desktop\":true,\"tablet\":true,\"mobile\":true}",
-        "language": "en-US",
-        "languageType": "single",
-        "campaignType": 1, 
-        "createTime": "2025-03-18T11:29:25.000+00:00",
-        "modifyTime": "2025-03-20T05:49:30.000+00:00",
-        "invitationAssets": [],
-        "campaignDefaultLanguage": "en-US"
-    }
-]
+ {
+            "id": "hEozzhMqSTaaJyXeS70IoA",
+            "campaignParentId": "xZk1_YIERCu96Qqwb7hy0g",
+            "campaignName": "312",
+            "multiChannel": [
+                "CHAT"
+            ],
+            "startTime": "2025-03-07 10:00:00",
+            "endTime": "2032-12-31 22:00:00",
+            "chatEntryId": "",
+            "videoEntryId": "",
+            "botId": "i6gPnnpUT-qL_j-6dTjbGw",
+            "chatFlowId": "",
+            "videoFlowId": "",
+            "botFlowId": "sKu9b_F_QC-xRuNDAjC5rA",
+            "botFlowInfo": {
+                "botFlowId": "sKu9b_F_QC-xRuNDAjC5rA",
+                "botFlowType": "bot_main_flow"
+            },
+            "chatFlowType": 2,
+            "invitationId": "HlfJ9LUuQ6ualwXEAwhfzQ",
+            "invitationStyle": "{\"name\":\"zzzzzz\",\"borderWidth\":0,\"borderRadius\":28,\"buttonSize\":56,\"fontFamily\":\"sans-serif\",\"text\":\"\",\"btnBgColor\":\"#4488FF\",\"fontColor\":\"#FFFFFF\",\"selected\":false,\"position\":{\"x\":2,\"y\":2},\"type\":\"embedded\",\"embedMethod\":\"embed\",\"positionId\":\"\",\"code\":\"zzzzzz\\nzzzzzz\",\"selectorType\":\"id\",\"selectorUserType\":\"button\",\"icon\":{\"type\":\"system\",\"value\":\"default.svg\"},\"shouldMinimized\":false,\"id\":\"HlfJ9LUuQ6ualwXEAwhfzQ\",\"assetFields\":[]}",
+            "invitationType": "embedded",
+            "invitationIcon": {},
+            "windowId": "0sk9-n4WTjW67xowAhECjg",
+            "windowStyle": "{\"name\":\"Default Theme\",\"description\":\"Zoom engagement default window. Use engagement window to configure your own.\",\"title\":\"Welcome to Web Chat\",\"title_bar_color\":\"#FFFFFF\",\"title_bar_text\":\"#222230\",\"customer_bubble\":\"#E7F1FD\",\"customer_text\":\"#222230\",\"selected\":false}",
+            "buttonStyle": "",
+            "downloadTranscript": true,
+            "emailTranscript": true,
+            "enableWelcomeScreen": false,
+            "languageSettings": {
+                "multilingualLanguages": [],
+                "detectFrom": 0
+            },
+            "targeting": "{\"desktop\":true,\"tablet\":true,\"mobile\":true,\"detectLang\":false,\"langAttributes\":[],\"browser\":{\"tablet\":true,\"mobile\":true,\"desktop\":true},\"webviewInApp\":{\"tablet\":false,\"mobile\":false}}",
+            "language": "en-US",
+            "languageType": "single",
+            "serviceType": 2,
+            "campaignType": 1,
+            "invitationAssets": [],
+            "windowAssets": [],
+            "multilingualLanguages": [],
+            "botMsgSettingsOutDTO": {
+                "botId": "i6gPnnpUT-qL_j-6dTjbGw",
+                "botMsgCdnUrl": "https://file-paa.zoom.us/mW8oJ-a_S9mI4r0tM-iIQA/MS4yLglE7BfmHgMUaduMjl5BD53k9KecGBVrXERs6LIB7sLM/i6gPnnpUT-qL_j-6dTjbGw.json?response-cache-control=max-age%3D60&v=1741601121",
+                "botName": "'\"><img>rrrrrrrr",
+                "botAvatarCdnUrl": "https://file-paa.zoom.us/T4nXUg9QTK2oXJ-vknMsSA/MS4yLqIcUGe7nwL0iKKvZxhYpkgMKJuxUYSlSL2YrsM4XOJD/i6gPnnpUT-qL_j-6dTjbGw_bot_avatar_preview_file_name?response-cache-control=max-age%3D60&v=1742287421"
+            },
+            "proactiveMessage": {
+                "id": "LSw8YfNgT-2-3yE7XScYuA",
+                "name": "te'zzz",
+                "description": "zzz",
+                "displayDelay": 10000,
+                "reappearanceOption": 1,
+                "bubbleStyle": "{\"fontFamily\":\"Helvetica\",\"bubbleColor\":\"#FFFFFF\",\"bubbleTextColor\":\"#131619\"}",
+                "ctaButtonStyle": "{\"ctaBtnFilled\":false,\"ctaBtnColor\":\"#0e72ed\",\"ctaBtnTextColor\":\"#0e72ed\"}",
+                "ctaEnabled": true,
+                "bubbleDetail": [
+                    {
+                        "id": "RujjUrrcRHaQq2JjHtSXDQ",
+                        "text": "zzzzzz",
+                        "isAssetEnabled": false,
+                        "assetId": ""
+                    }
+                ],
+                "ctaButtonDetail": [
+                    {
+                        "id": "K5LpMcy7SbGZj1iqdwoe1w",
+                        "flowId": "sKu9b_F_QC-xRuNDAjC5rA",
+                        "flowType": "bot_main_flow",
+                        "text": "zzzz",
+                        "isAssetEnabled": false,
+                        "assetId": "",
+                        "botId": "i6gPnnpUT-qL_j-6dTjbGw"
+                    }
+                ],
+                "divisionId": "",
+                "isMainDivision": true
+            },
+            "defaultAllLocation": true,
+            "locationType": 0,
+            "consumerIdentityJwtApiUrl": "",
+            "i18nCDNForSystemMessage": "https://file-paa.zoom.us/ODsfcgkKTwaxIjBmI1SjAg/MS4yLsZI4Rl4HJd9tHHqvD-yl8nzmBEnf7djDqwILFYxtOam/system_file.json?response-cache-control=max-age%3D60",
+            "aid": "px3bOT5aT8yjyaSlWyCj0A",
+            "haid": "776",
+            "divisionId": "",
+            "accountSettings": {
+                "enableCampaignChatPersistence": true
+            },
+            "isProactiveEnabled": true
+        }
