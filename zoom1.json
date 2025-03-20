@@ -1,0 +1,23 @@
+[
+    {
+        "id": "lazyLoadCampaign",
+        "campaignParentId": "",
+        "campaignName": "lazyLoadCampaign",
+        "campaignTag": "lazyLoadCampaign",
+        "multiChannel": [
+            "CHAT"
+        ],
+        "invitationId": "invitationId",
+        "invitationStyle": "{\"name\":\"default invitation\",\"borderWidth\":0,\"borderRadius\":28,\"buttonSize\":56,\"fontFamily\":\"Inter\",\"text\":\"\",\"btnBgColor\":\"#4488FF\",\"fontColor\":\"#FFFFFF\",\"selected\":false,\"position\":{\"x\":2,\"y\":2}}",
+        "invitationType": "sticky",
+        "downloadTranscript": true,
+        "emailTranscript": true,
+        "enableWelcomeScreen": false,
+        "targeting": "{\"desktop\":true,\"tablet\":true,\"mobile\":true}",
+        "language": "en-US",
+        "languageType": "single",
+        "campaignType": 1,
+        "invitationAssets": [],
+        "campaignDefaultLanguage": "en-US"
+    }
+]
