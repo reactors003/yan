@@ -1,0 +1,21 @@
+[
+  {
+    "id": "_HfvZ-74QcuQyxyVceTBtA",
+    "campaignParentId": "z9ExwKp2T1uw47qMSqCJCQ",
+    "campaignName": "'\"><img>rrrrrrrrzzzzzz",
+    "campaignTag": "my_lazy_campaign",
+    "multiChannel": ["CHAT"],
+    "invitationId": "2O1a4z2BT5-4coHDwRW3bQ",
+    "invitationStyle": "{\"name\":\"zzzzzz\",\"borderWidth\":0,\"borderRadius\":28,\"buttonSize\":56,\"fontFamily\":\"'rrrrr;zzzzzz\",\"text\":\"zzzzz\",\"btnBgColor\":\"#4488FF\",\"fontColor\":\"#FFFFFF\",\"selected\":false,\"position\":{\"x\":2,\"y\":2},\"type\":\"sticky\",\"embedMethod\":\"embed\",\"positionId\":\"\",\"code\":\"\",\"selectorType\":\"id\",\"selectorUserType\":\"button\",\"shouldMinimized\":false,\"icon\":{\"type\":\"system\",\"value\":\"default.svg\"}}",
+    "invitationType": "sticky",
+    "invitationAssets": [],
+    "campaignType": 1,
+    "targeting": "{\"desktop\":true,\"tablet\":true,\"mobile\":true}",
+    "language": "en-US",
+    "languageType": "single",
+    "downloadTranscript": true,
+    "emailTranscript": true,
+    "enableWelcomeScreen": false,
+    "campaignDefaultLanguage": "en-US"
+  }
+]
